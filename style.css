@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Baloo Bhai 2", sans-serif;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-color: black;
+    overflow: auto;
+}
+
+.con {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+.left {
+    width: 30%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 83%);
+    box-shadow: 5px 5px 20px black;
+    position: fixed;
+}
+
+.right {
+    width: 69%;
+    height: 100%;
+    position: relative;
+    left: 30%;
+}
+
+.top {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 23px 0px;
+}
+
+.circle {
+    width: 35%;
+    height: 106%;
+    box-shadow: 5px 5px 20px black;
+
+}
+.circle img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.name{
+    color: #f59e9e;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 41px;
+
+}
+.block {
+    margin: 13px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block li {
+    list-style: none;
+    margin: 9px 0px;
+}
+
+.block li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.block li a:hover {
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+.heading {
+    margin: 23px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 43px;
+    width: 937.016px;
+    height: 115.5px;
+}
+.sub-heading{
+    height: 100%;
+}
+.contacts{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contacts div{
+    width: 25%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+.contacts div a img{
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+}
+.sub-heading h1 {
+    font-size: 52px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    color: #ff7373;
+    text-shadow: -10px -1px 10px rgba(0, 0, 0, 0.253);
+}
+
+.sub-heading h2 {
+    font-size: 25px;
+    color: white;
+
+}
+
+.heading button {
+    padding: 7px 23px;
+    border-radius: 20px;
+
+}
+
+.heading button a {
+    font-size: 18px;
+    transition: all ease-in 0.3s;
+    color: blueviolet;
+}
+
+.heading button a:hover {
+    font-size: 17px;
+}
+
+.section {
+    width: 100%;
+    height: 60%;
+    margin-top: 48px;
+    background-image: url('./images/box.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 23px;
+    opacity: 0.9;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.section .intro {
+    width: 77%;
+    margin: 10px 23px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #250047;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.5px;
+    border-radius: 23px 0px 0px 23px;
+}
+
+.block li img {
+    width: 23px;
+}
+
+#skills {
+    background-image: url('./images/skills.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+.skill-heading {
+    display: flex;
+    align-items: center;
+    width: 783px;
+    height: 115.5px;
+    margin: 23px 0px;
+    gap: 285px;
+}
+.skill-heading .contacts{
+    width: 60%;
+}
+.skill-heading .contacts div{
+    width: 50%;
+}
+.skills {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin: 41px 0px;
+    padding-right: 20px;
+    margin-bottom: 100px;
+}
+
+.skill {
+    height: 130px;
+    border: 2px solid #ffffff;
+    color: white;
+    border-radius: 20px;
+    box-shadow: inset 4px 4px 9px rgb(236, 236, 236);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    padding: 32px;
+    background-color: black;
+    transition: all ease-in 0.3s;
+}
+
+.skill:hover {
+    background-color: #f3b1fa;
+    color: black;
+    padding: 36px 32px;
+    border: 2px solid black;
+    box-shadow: inset 4px 4px 9px black;
+
+}
+
+.experience h2 {
+    padding: 0px 43px;
+    font-size: 44px;
+    letter-spacing: 0.5px;
+}
+
+.certificates {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 40px;
+    padding: 23px 0px;
+}
+
+.certificates div {
+    height: 255px;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px #181818;
+    cursor: pointer;
+    padding: 23px;
+    transition: all ease-in 0.3s;
+}
+.certificates div:hover{
+    padding: 0px;
+}
+.cimg{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.skill img {
+    width: 40%;
+    height: 70%;
+    margin-bottom: 20px;
+}
+
+.skill .tailwind {
+    height: 40%;
+}
+.skill-heading .heading , .experience h2 , #project .heading h2{
+    color: #ff7373;
+    font-size: 91px;
+    font-weight: 800;
+}
+#project .heading{
+    padding: 0px;
+}
+.p1{
+    height: 80%;
+    width: 100%;
+    margin-bottom: 60px;
+}
+.basicprojects{
+    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 60px;
+}
+.basicprojects div{
+    width: 100%;
+    height: 250px;
+    background-color: blue;
+
+}
+.box img{
+    border-radius: 13px 13px 0px 0px;
+    object-fit: cover;
+}
+.content .lang p{
+    font-size: 16px;
+    padding: 4px 14px;
+    margin: 12px 6px;
+}
+
+.content h2{
+    color: silver;
+    margin: 12px;
+}
+.p2 h1{
+    margin-bottom: 60px;
+}
+.responsive{
+    display: none;
+}
